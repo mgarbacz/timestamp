@@ -1,0 +1,19 @@
+{
+  "name": "friendly-timestamp",
+  "version": "0.1.0",
+  "description": "Human readable timestamps via JavaScript",
+  "author": "Michal Garbacz <mich.garbacz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mgarbacz/friendly-timestamp.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*"
+  }
+}
