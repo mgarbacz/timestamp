@@ -1,2 +1,2 @@
-friendly-timestamp
-------------------
+timestamp
+---------
