@@ -5,7 +5,7 @@
     "Michal Garbacz <mich.garbacz@gmail.com>"
   ],
   "description": "Human readable timestamps via JavaScript",
-  "main": "init.js",
+  "main": "dist/timestamp.js",
   "moduleType": [
     "amd"
   ],
