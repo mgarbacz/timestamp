@@ -1,0 +1,26 @@
+{
+  "name": "friendly-timestamp",
+  "version": "0.1.0",
+  "authors": [
+    "Michal Garbacz <mich.garbacz@gmail.com>"
+  ],
+  "description": "Human readable timestamps via JavaScript",
+  "main": "init.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "timestamp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
