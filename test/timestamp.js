@@ -8,10 +8,9 @@ describe('Timestamp', function() {
         timestamp = new Timestamp();
         expect(timestamp).to.be.ok;
     });
-    
+
     it('should return like Date with no arguments', function() {
        timestamp = new Timestamp();
-       var date = new Date();
-       expect(timestamp).to.equal(date);
+       expect(timestamp).to.be.instanceof(Date);
     });
 });
