@@ -3,6 +3,10 @@
 
     var Timestamp = {};
 
+    Timestamp.format = function() {
+        return;
+    };
+
     if (typeof define !== 'undefined' && define.amd) {
         define(Timestamp);
     } else if (typeof exports === 'object') {
