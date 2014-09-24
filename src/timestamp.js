@@ -1,9 +1,7 @@
 (function(root) {
     'use strict';
 
-    var Timestamp = function() {
-        return new Date();
-    };
+    var Timestamp = {};
 
     if (typeof define !== 'undefined' && define.amd) {
         define(Timestamp);
