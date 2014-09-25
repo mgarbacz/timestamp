@@ -10,4 +10,8 @@ describe('Timestamp', function() {
         expect(Timestamp.format).to.be.ok;
         expect(Timestamp.format).to.be.instanceof(Function);
     });
+
+    it('should not accept invalid <time> element', function() {
+        expect(Timestamp.format('<p>')).to.not.be.ok;
+    });
 });
