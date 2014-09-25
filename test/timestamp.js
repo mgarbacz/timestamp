@@ -11,7 +11,11 @@ describe('Timestamp', function() {
         expect(Timestamp.format).to.be.instanceof(Function);
     });
 
-    it('should not accept invalid <time> element', function() {
-        expect(Timestamp.format('<p>')).to.not.be.ok;
+    it('should not accept non-<time> element', function() {
+        var fn = function() {
+            Timestamp.format({ element: '<p>Not a time element</p>' });
+        };
+
+        expect(fn).to.throw(Error, /element must be valid time element/);
     });
 });
