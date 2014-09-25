@@ -12,8 +12,11 @@ describe('Timestamp', function() {
     });
 
     it('should not accept non-<time> element', function() {
+        var testElement = {};
+        testElement.nodeName = 'p';
+
         var fn = function() {
-            Timestamp.format({ element: '<p>Not a time element</p>' });
+            Timestamp.format({ element: testElement });
         };
 
         expect(fn).to.throw(Error, /element must be valid time element/);
