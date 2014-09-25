@@ -3,7 +3,9 @@
 
     var Timestamp = {};
 
-    Timestamp.format = function() {
+    Timestamp.format = function(params) {
+        if (params.element.nodeName !== 'time')
+            throw new Error('element must be valid time element');
         return;
     };
 
