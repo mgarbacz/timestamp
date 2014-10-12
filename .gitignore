@@ -1,2 +1,6 @@
 # NPM dependencies
 node_modules
+
+# istanbul coverage
+coverages
+
