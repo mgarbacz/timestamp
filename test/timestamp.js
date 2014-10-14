@@ -44,7 +44,7 @@ describe('Timestamp', function() {
 
     });
 
-    it('should return a valid time element', function() {
+    it('should accept a valid time element', function() {
         var testElement = {};
         testElement.nodeName = 'time';
         testElement.attributes = {};
