@@ -8,7 +8,7 @@
             throw new Error('element must be valid time element');
         if (!isDatetime(params.element.attributes.datetime))
             throw new Error('element must have a valid datetime attribute');
-        return true;
+        return params.element.attributes.datetime;
     };
 
     var isDatetime = function(datetime) {
