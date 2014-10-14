@@ -43,4 +43,13 @@ describe('Timestamp', function() {
             .throw(Error, /element must have a valid datetime attribute/);
 
     });
+
+    it('should return a valid time element', function() {
+        var testElement = {};
+        testElement.nodeName = 'time';
+        testElement.attributes = {};
+        testElement.attributes.datetime = '2014-01-01T00:00:00.000Z';
+
+        expect(Timestamp.format({ element: testElement })).to.be.ok;
+    });
 });
