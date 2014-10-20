@@ -4,12 +4,12 @@
     var Timestamp = {};
 
     Timestamp.format = function(params) {
-        if (params.element.nodeName !== 'time')
+        if (params.element.nodeName.match(/time/i) === null)
             throw new Error('element must be valid time element');
         if (!isDatetime(params.element.attributes.datetime))
             throw new Error('element must have a valid datetime attribute');
         if(!params.format)
-            params.element.text =
+            params.element.textContent =
                 new Date(params.element.attributes.datetime).toString();
         return this;
     };
