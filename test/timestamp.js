@@ -53,13 +53,13 @@ describe('Timestamp', function() {
         expect(Timestamp.format({ element: testElement })).to.be.ok;
     });
 
-    it('should return datetime if no format given', function() {
+    it('should return self if there are no errors', function() {
         var testElement = {};
         testElement.nodeName = 'time';
         testElement.attributes = {};
         testElement.attributes.datetime = '2014-01-01T00:00:00.000Z';
 
         expect(Timestamp.format({ element: testElement })).to
-            .equal(testElement.attributes.datetime);
+            .deep.equal(Timestamp);
     });
 });
