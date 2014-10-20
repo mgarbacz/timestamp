@@ -8,6 +8,9 @@
             throw new Error('element must be valid time element');
         if (!isDatetime(params.element.attributes.datetime))
             throw new Error('element must have a valid datetime attribute');
+        if(!params.format)
+            params.element.text =
+                new Date(params.element.attributes.datetime).toString();
         return this;
     };
 

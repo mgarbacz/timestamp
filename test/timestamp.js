@@ -62,4 +62,16 @@ describe('Timestamp', function() {
         expect(Timestamp.format({ element: testElement })).to
             .deep.equal(Timestamp);
     });
+
+    it('should set text to default Date string if given no format', function() {
+        var testElement = {},
+            testDate = new Date('2014-01-01T00:00:00.000Z');
+        testElement.nodeName = 'time';
+        testElement.attributes = {};
+        testElement.attributes.datetime = '2014-01-01T00:00:00.000Z';
+
+        Timestamp.format({ element: testElement });
+
+        expect(testElement.text).to.equal(testDate.toString());
+    });
 });
