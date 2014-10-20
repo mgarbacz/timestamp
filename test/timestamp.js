@@ -72,6 +72,6 @@ describe('Timestamp', function() {
 
         Timestamp.format({ element: testElement });
 
-        expect(testElement.text).to.equal(testDate.toString());
+        expect(testElement.textContent).to.equal(testDate.toString());
     });
 });
